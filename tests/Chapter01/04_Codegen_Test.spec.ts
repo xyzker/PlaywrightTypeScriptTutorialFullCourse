@@ -8,9 +8,9 @@ test('Codegen test case', { tag: ['@PlaywrightWithJenkins'] }, async ({ page }) 
   await page.getByPlaceholder('Search').first().click();
   await page.getByPlaceholder('Search').first().fill('playwright by testers talk ');
   await page.getByRole('button', { name: 'Search', exact: true }).click();
-  await page.getByRole('link', { name: 'Playwright by Testers Talk☑️' }).click();
+  await page.getByRole('link', { name: 'Playwright by Testers Talk ✅' }).click();
   await page.locator('video').click();
-  await expect(page.getByRole('link', { name: 'Playwright by Testers Talk☑️' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Playwright by Testers Talk ✅' })).toBeVisible();
 });
 
 /**
