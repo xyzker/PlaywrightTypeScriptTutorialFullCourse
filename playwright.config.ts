@@ -49,7 +49,7 @@ export default defineConfig({
     headless: true,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    actionTimeout: 45000,
+    actionTimeout: 5000,
 
     // launchOptions: {
     //   args: ['--start-maximized']
